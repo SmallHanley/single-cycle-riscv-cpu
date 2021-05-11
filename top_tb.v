@@ -19,7 +19,8 @@ reg [31:0] GOLDEN [0:65535];
 integer gf,
         i,
         num,
-        err;
+        err,
+	tmp;
 
 always #(`CYCLE/2) clk = ~clk;
 
@@ -44,7 +45,7 @@ initial begin
     gf = $fopen("./golden.hex", "r");
     while (!$feof(gf))
     begin
-      $fscanf(gf, "%h\n", GOLDEN[num]);
+      tmp = $fscanf(gf, "%h\n", GOLDEN[num]);
       num = num + 1;
     end
     $fclose(gf);
