@@ -17,6 +17,12 @@ wire [31:0] data_addr;
 wire [31:0] data_in;
 wire [31:0] data_out;
 
+initial
+begin
+	$dumpfile("tb.vcd");
+	$dumpvars(0, top);
+end
+
 CPU i_CPU(
     .clk        ( clk              ),
     .rst        ( rst              ),
