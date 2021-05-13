@@ -41,7 +41,13 @@ build_hex: $(ELF_NAME)
 %.o: %.c
 	$(RISCV_GCC) -c $(CFLAGS) $^
 
+iverilog:
+	iverilog -o tb.vvp top.v top_tb.v
+
+vvp:
+	vvp tb.vvp
+
 .PHONY: clean
 
 clean:
-	rm -rf $(ELF_NAME) $(ELF_NAME).log $(ELF_NAME)*.hex *.o
+	rm -rf $(ELF_NAME) $(ELF_NAME).log $(ELF_NAME)*.hex *.o *.vvp *.vcd
