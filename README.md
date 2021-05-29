@@ -1,6 +1,6 @@
 # single-cycle-riscv-cpu
 
-## Instruction
+## Introduction
 This is a simple single cycle cpu supporting `RV32I` ISA, in verilog.
 
 ### Instruction
