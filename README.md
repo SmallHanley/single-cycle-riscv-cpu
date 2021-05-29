@@ -1,7 +1,7 @@
 # single-cycle-riscv-cpu
 
 ## Introduction
-This is a simple single cycle cpu supporting `RV32I` ISA, in verilog.
+`single-cycle-riscv-cpu` is based on the assignment of Computer Organization HW3 of [CAID Lab (Computer Architecture & IC Design Lab)](http://caid.csie.ncku.edu.tw/index.php?e=home.courses&lang=en#tab-0) in [NCKU](https://web.ncku.edu.tw/index.php?Lang=en). This is a simple single cycle cpu supporting RV32I ISA, in verilog.
 
 ### Instruction
 **R-type:** `ADD`, `SUB`, `SLL`, `SLT`, `SLTU`, `XOR`, `SRI`, `SRA`, `OR`, `AND`  
@@ -56,7 +56,7 @@ Compile using iverilog:
 $ make iverilog 
 iverilog -o tb.vvp top.v top_tb.v
 ```
-Use vvp as the simulation run-time engine, and dump the `vcd` file:
+Use vvp as the simulation run-time engine, and dump the `vcd` (tb.vcd) file:
 ```
 $ make vvp
 vvp tb.vvp
