@@ -4,12 +4,12 @@
 This is a simple single cycle cpu supporting `RV32I` ISA, in verilog.
 
 ### Instruction
-**R-type:** `ADD`, `SUB`, `SLL`, `SLT`, `SLTU`, `XOR`, `SRI`, `SRA`, `OR`, `AND`
-**I-type:** `LW`, `LB`, `LH`, `LBU`, `LHU`, `ADDI`, `SLTI`, `SLTIU`, `XORI`, `ORI`, `ANDI`, `SLLI`, `SRLI`, `SRAI`, `JALR`
-**S-type:** `SW`, `SB`, `SH`
-**B-type:** `BEQ`, `BNE`, `BLT`, `BGE`, `BLTU`, `BGEU`
-**U-type:** `AUIPC`, `LUI`
-**J-type:** `JAL`
+**R-type:** `ADD`, `SUB`, `SLL`, `SLT`, `SLTU`, `XOR`, `SRI`, `SRA`, `OR`, `AND`  
+**I-type:** `LW`, `LB`, `LH`, `LBU`, `LHU`, `ADDI`, `SLTI`, `SLTIU`, `XORI`, `ORI`, `ANDI`, `SLLI`, `SRLI`, `SRAI`, `JALR`  
+**S-type:** `SW`, `SB`, `SH`  
+**B-type:** `BEQ`, `BNE`, `BLT`, `BGE`, `BLTU`, `BGEU`  
+**U-type:** `AUIPC`, `LUI`  
+**J-type:** `JAL`  
 
 ### Register File
 | Register | ABI Name |
